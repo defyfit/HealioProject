@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom'
+
 import Profile from './Profile/Profile'
 
 class App extends Component {
   render() {
     return (
-      <Profile/>
+      <div>
+        <Route path="/profile" component={Profile}/>
+      </div>
     );
   }
 }
