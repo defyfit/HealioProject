@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
+import { Button } from 'reactstrap';
 
-import Profile from './Profile/Profile'
+import TrainerProfileList from './TrainerProfile/TrainerProfileList'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Route path="/profile" component={Profile}/>
+        <Route path="/trainer-profile" component={TrainerProfileList}/>
+
       </div>
     );
   }

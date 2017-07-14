@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { graphql, gql } from 'react-apollo'
 import { Route } from 'react-router-dom'
-import TrainerProfile from '../TrainerProfile/trainerprofile'
+import TrainerProfile from '../TrainerProfile/TrainerProfile'
+import ProfileAdd from '../Profile/ProfileAdd'
 
 const query = gql`
 {
@@ -28,6 +29,7 @@ class Profile extends Component {
       <div>
         <h1>The Profile Component</h1>
         <Route path="/profile/trainer-profile" component={TrainerProfile}/>
+        <Route path="/profile/trainer-profile/profile-add" component={ProfileAdd}/>
       </div>
     )
   }
@@ -35,3 +37,4 @@ class Profile extends Component {
 
 
 export default graphql(query)(Profile)
+
